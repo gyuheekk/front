@@ -27,11 +27,21 @@
     console.log('');
 
     // Object(객체로 값을 하나의 변수에 받아서 처리해보자)  
-    
+    const obj1 = {name:'홍길동', age:25, job:'학생'};
+    const obj2 = {name:'김말숙', age:29, job:'회사원'};
 
+    memberPrint2(obj1);
+    console.log('');
+    memberPrint2(obj2);
+
+    function memberPrint2(member) {
+      console.log(member.name);
+      console.log(member.age);
+      console.log(member.job);
+    }
   </script>
 </head>
 <body>
-  
+  <h2>객체연습</h2>  
 </body>
 </html>

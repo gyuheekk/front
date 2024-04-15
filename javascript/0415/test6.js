@@ -33,7 +33,7 @@ class Member {
 
   set age(age) {
     //this._age = age;
-    if(age < 1) age = 1;
+    if(age < 1) age = 1; // 나이 제한 설정 (1보다 작은수를 넣으면 1로 출력함)
     this._age = age;
   }
 
@@ -43,6 +43,6 @@ class Member {
   }
 }
 
-let member = new Member('홍길동', 25, '학생');
+let member = new Member('홍길동', 25, '고등학생');
 console.log("member : " , member);
 console.log("name : ", member.name, ", age : ", member.age, ", job : ", member.job);
